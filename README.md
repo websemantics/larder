@@ -33,7 +33,7 @@ Bower install larder
 NPM
 
 ```bash
-npm i  install larder
+npm i larder
 ```
 
 ## Getting Started
@@ -53,7 +53,7 @@ Larder.defaults({
 
 The library provides all you expect from such a utility including,
 
-*save*, this method expects `key`, `value`, and optional `expires` parameter (overrides the global settings).
+**save**, this method expects `key`, `value`, and optional `expires` parameter (overrides the global settings).
 
 ```javascript
 Larder.save('don', {
@@ -64,7 +64,7 @@ Larder.save('don', {
 })
 ```
 
-*fetch*, retrieves the `value` or a stored item - providing a `key`, or null if it does not exist or has expired. All expired items are removed from the local storage.
+**fetch**, retrieves the `value` or a stored item - providing a `key`, or null if it does not exist or has expired. All expired items are removed from the local storage.
 
 ```javascript
 Larder.fetch('don')
@@ -76,7 +76,7 @@ Larder.fetch('don')
 Object  {name: 'Don Juan', height: '165cm',weight: '59kg',  age: 66}
 ```
 
-*remove*, savely removes an item from the storage for the given `key`.
+**remove**, savely removes an item from the storage for the given `key`.
 
 ```javascript
 Larder.remove('don')
@@ -88,7 +88,7 @@ output
 Well, he wasn't here to start with.
 ```
 
-*clear*, this method expects will clear all items with the given `namespace`.
+**clear**, this method expects will clear all items with the given `namespace`.
 
 ```javascript
 Larder.clear()
