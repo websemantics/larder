@@ -24,7 +24,7 @@
     }
 }(this, function() {
     var root = this || global
-    var me = { VERSION: '1.0.1'}
+    var me = { VERSION: '1.0.2'}
     var init = false;
 
     /* Library defaults, can be changed using the 'defaults' member method,
@@ -158,7 +158,7 @@
 
     */
 
-    clear = function() {
+    me.clear = function() {
         localStorage.removeItem(defaults.id);
         log('Cache ({{id}}) has been cleared', {
             id: defaults.id

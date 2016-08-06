@@ -1,6 +1,6 @@
 {
   "name": "larder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Straightforward, in browser cache using local storage.",
   "main": "larder.js",
   "scripts": {
