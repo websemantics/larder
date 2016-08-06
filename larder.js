@@ -24,7 +24,7 @@
     }
 }(this, function() {
     var root = this || global
-    var me = { VERSION: '1.0.0'}
+    var me = { VERSION: '1.0.1'}
     var init = false;
 
     /* Library defaults, can be changed using the 'defaults' member method,
@@ -110,6 +110,8 @@
     			- vaue (object, etc): the value to store
     			- expires (int): duration in minutes to wait for the item to expire (optional)
 
+          Returns:
+          - value (object, etc), the stored value
   	*/
 
     me.save = function(key, value, expires) {
@@ -127,6 +129,7 @@
                 key: key
             })
         }
+        return value
     }
 
 
