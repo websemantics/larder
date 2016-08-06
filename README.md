@@ -64,7 +64,7 @@ Larder.save('don', {
 })
 ```
 
-**fetch**, retrieves the `value` or a stored item - providing a `key`, or null if it does not exist or has expired. All expired items are removed from the local storage.
+**fetch**, retrieves the `value` or a stored item - providing a `key`, or it returns `null` if it does not exist or has expired. All expired items are removed from the local storage.
 
 ```javascript
 Larder.fetch('don')
