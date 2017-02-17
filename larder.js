@@ -11,15 +11,12 @@
  */
 
 ;
-(function(root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        define(factory)
-    } else if (typeof module === 'object' && module.exports) {
-        module.exports = factory()
-    } else {
-        root.Larder = factory()
-    }
-}(this, function() {
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) { define(factory) }
+    else if (typeof module === 'object' && module.exports) { module.exports = factory() }
+    else { root.Larder = factory() }
+}(this, function () {
+
     var root = this || global
     var me = { VERSION: '1.0.2'}
     var init = false;
