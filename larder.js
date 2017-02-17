@@ -13,10 +13,7 @@
 ;
 (function(root, factory) {
     if (typeof define === 'function' && define.amd) {
-        define([],
-            function() {
-                return (root.Larder = factory())
-            })
+        define(factory)
     } else if (typeof module === 'object' && module.exports) {
         module.exports = factory()
     } else {
